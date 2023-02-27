@@ -1,0 +1,33 @@
+CREATE TABLE Companie_aeriana (
+	Cod_companie int,
+	Denumire varchar(30),
+	Tara varchar(20)
+);
+CREATE TABLE Localitati (
+	Cod_localitate int,
+	Nume_localitate varchar(20)
+);
+CREATE TABLE Companie_localitati (
+	Cod_companie int,
+    Cod_localitate int
+);
+CREATE TABLE Zboruri (
+	Cod_zboruri int,
+    Cod_companie int,
+    Cod_loc_plecare int,
+    Cod_loc_sosire int
+);
+CREATE TABLE Curse_aeriene (
+	Cod_cursa int,
+    Cod_zbor int,
+    OMS datetime,
+    Pret int
+);
+CREATE TABLE Clienti (
+	Cod_client int
+);
+CREATE TABLE Bliete (
+	Cod_Bilete int,
+    Cod_cursa int,
+    Cod_client int
+);
